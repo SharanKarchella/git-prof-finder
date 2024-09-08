@@ -1,0 +1,41 @@
+*{
+    background-color: #e0f7fa;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+input-wrapper{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input{
+    padding: 10px;
+    font-size: 15px;
+    border: 1.5px solid black;
+}
+
+.input-wrapper button{
+    /* padding: 5px 12px;
+    border: none;
+    border-radius: 8px; */
+    /* border-top: 2px; */
+    color: black;
+    cursor: pointer;
+}
+.user{
+    padding: 15px;
+    border-radius: 10px;
+}
+.avatar{
+    height: 250px;
+    border-radius: 150%;
+    aspect-ratio: 1/1;
+}
