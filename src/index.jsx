@@ -12,6 +12,7 @@ export default function GithubProfileFinder() {
 
   async function fetchUserData() {
     const response = await fetch(`https://api.github.com/users/${userName}`);
+
     const res = await response.json();
     if (res) {
       setUserData(res);
@@ -31,7 +32,7 @@ export default function GithubProfileFinder() {
           name="search-userName"
           placeholder="Search Github Username..."
           value={userName}
-          onChange={(evt) => setUserName(evt.target.value)}
+          onChange={(e) => setUserName(e.target.value)}
         />
         <button onClick={handleSubmit}>Search</button>
       </div>
@@ -46,3 +47,4 @@ export default function GithubProfileFinder() {
 //     const data = resp.json();
 //     console.log(data);
 //   }
+
